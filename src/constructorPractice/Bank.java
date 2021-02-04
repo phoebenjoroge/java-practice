@@ -15,6 +15,11 @@ public class Bank {
         this.phoneNumber =phoneNumber;
 
     }
+    //Set default parameters
+    Bank(){
+        this(562126, 87387.0, "Default Name", "Default email", 6487239);
+        System.out.println("Default parameters");
+    }
 
     public double deposit(double addDeposit){
         accountBalance += addDeposit;
