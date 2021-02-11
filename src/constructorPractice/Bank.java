@@ -21,6 +21,13 @@ public class Bank {
         System.out.println("Default parameters");
     }
 
+    public Bank(String name, String email, int phoneNumber) {
+        this(7832371, 7682.90, name, email, phoneNumber); // default account and balance
+        this.name = name;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
     public double deposit(double addDeposit){
         accountBalance += addDeposit;
         System.out.println("Your new balance is: " + this.accountBalance);
